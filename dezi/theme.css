@@ -1,0 +1,44 @@
+body {background-color:black;}
+#wrapper {
+	margin:1em;
+}
+#content {
+	width:45%;
+	height:400px;
+	float:left;
+	padding-left:1em;
+	font-family: sans-serif;
+	background-color:gray;
+}
+#dezzie {
+	display:block;
+	padding:.5em;
+	background-color:#d6d6d6;
+	width:45%;
+	float:right;
+	font-family: serif;
+}
+#inventory {
+	border-top:1px solid black;
+	padding:.25em;
+	margin-top:250px;
+	text-align:center;
+}
+#inventory table {
+	border:2px solid black;
+	background: white;
+	width:100%;
+}
+#inventory td {
+	border:2px solid black;
+	padding:2px;
+	height:50px;
+}
+#inventory td:hover {
+	background-color:#a5eff1;
+}
+#inventory h2 {
+	font-variant:small-caps;
+}
+#inventory a:hover { font-weight:bold;}
+#inventory a {text-decoration:none; color:black;}
