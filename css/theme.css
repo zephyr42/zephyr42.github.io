@@ -1,0 +1,74 @@
+/* THEME-NURSING.CSS */
+/**
+ * Theme file used for the School of Nursing
+ */
+@media screen,projection,print {
+	/* page base: background color, same bg image as div#pagebody */
+	body { background-color:#f2ead7; background-image:url(../res/images/themes/red/bg-body.gif); }
+	/* border colors for headers */
+	h1 { border-color:#f6d4a3; }
+	h2 { border-color:#f6d4a3; }
+	h3.divided { border-color:#f6d4a3; }
+	/* in content h1 color */
+	body.school div#content h1 { color:#c00; }
+	/* default link colors */
+	a:link,a:visited { color:#a00 !important; }
+	a:focus,a:hover,a:active { color:#07d !important; }
+	div#school-branding h1 a {color:#fff !important;	}
+	/* background images */
+	div#pagewrapper { background-image:url(../res/images/themes/red/bg-pagewrapper.jpg); }
+	div#pagebody { background-image:url(../res/images/themes/red/bg-body.gif); }
+	/* border color for footer items */
+	div#footer-content { border-color:#f6d4a3; }
+	/* border color on rail modules */
+	div.module { border-color:#f6d4a3; }
+	h4 { border-color:#f6d4a3; }
+	div.module blockquote { color:#07d; }
+	/* left navigation link color */
+	ul#left-nav a { color:#a00; }
+	/* left navigation 2nd level nav */
+	ul#left-nav ul { background-color:#fcf0df; }
+	/* border color for images with borders */
+	img.bordered { border-color:#f6d4a3; }
+	/* dividing line color between list items */
+	ul.divided li { border-color:#f6d4a3; }
+	/* tabbed content boxes */
+	div.tabbed { border-color:#f6d4a3; }
+	div.tabbed ul.tabs { background-color:#f6d4a3; }
+	div.tabbed ul.tabs li.ui-tabs-selected a { color:#f6d4a3; }
+	div.tabbed div.links { border-color:#f6d4a3; }
+	/* iphone school name header */
+	body.iphone div#school-branding { background-color:#f6d4a3; }
+	
+	ol.lower-alpha, ol.lower-alpha>li {
+		list-style:lower-alpha outside;
+	}
+	ol.upper-alpha, ol.upper-alpha>li {
+		list-style:upper-alpha outside;
+	}
+	ol.lower-roman, ol.lower-roman>li {
+		list-style:lower-roman outside;
+	}
+	ol.upper-roman, ol.upper-roman>li {
+		list-style:upper-roman outside;
+	}
+	
+	ol.decimal, ol.decimal>li {
+		list-style:decimal outside;
+	}
+	
+	/* jquery tools slideshow */
+	div.images {width:750px; height:175px; position:relative; float:left; background-color:#F2EAD7;}
+	div.images {width: 740px !ie;}
+	.images div {display:none;	position:absolute; width:725px;	top:0;	left:0;	margin:0;	padding:0 30px 0 0; height:175px; vertical-align:middle;}
+	.static div {display:block !important;}
+	/* tabs (those little circles below slides) */
+	.slidetabs {clear:both;	margin-left:330px;}
+	/* single tab */
+	.slidetabs a {width:8px;height:8px;float:left;margin:3px;background:url(res/images/navigator.png) 0 0 no-repeat;display:block;font-size:1px;}
+	/* mouseover state */
+	.slidetabs a:hover {background-position:0 -8px;}
+	/* active state (current page state) */
+	.slidetabs a.current {background-position:0 -16px;} 	
+	.images h3 {font-size:22px;	font-weight:normal;	 text-align:center; padding-top:1em;}
+}

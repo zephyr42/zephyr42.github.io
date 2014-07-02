@@ -1,0 +1,45 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+.ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+.ui-state-active, .ui-widget-content .ui-state-active { border: 1px solid #4d4d4d; font-weight: normal; color: #ffffff; outline: none; }
+.ui-icon { width: 16px; height: 16px; background-image: url(images/ui-icons_0078ae_256x240.png); }
+.ui-state-active .ui-icon {background-image: url(images/ui-icons_4d4d4d_256x240.png); }
+.ui-icon-triangle-1-s { background-position: -64px -16px; }
+
+div.box4 { background-color:#F2EAD7;}
+div.box4 li, div.box3 li, div.box2 li {margin-bottom:1em;}
+div.box4 div.xref, div.box3 div.xref, div.box2 div.xref { padding: 5px 20px; }
+
+body.school div#content  div.box4 h1.redheading,
+body.school div#content  div.box2 h1.redheading,
+body.school div#content  div.box3 h1.redheading {background-color:#a00; color:#f2ead7; clear:both; padding:0.5em; font-size:12px; margin:0; border-top:none; width:auto;}
+
+div.photocap {float:left; background-color:#F2EAD7; padding:7px; text-align:center; width:162px; height:300px;}
+
+body.school div#content h1.redheading {background-color:#a00; color:#f2ead7; clear:both; padding:0.5em; font-size:16px; border-top:15px solid #fff; width:97%;}
+
+input.urlfield {margin-left:-6000px; display:none;}
+
+/* for collapsible lists; requires additional jQuery in core.js to function */
+#toggle-view{list-style:none;font-family:arial;font-size:11px;margin:0;padding:0;}
+#toggle-view li{margin:10px;border-bottom:1px solid #F6D4A3;position:relative;cursor:pointer;}
+#toggle-view h3{margin:0;font-size:14px;}
+#toggle-view span{position:absolute;right:5px;top:0;color:#ccc;font-size:13px;}
+#toggle-view .panel{margin:5px 0;display:none;}
+
+div.tabbed li.ui-state-active {border:none;}
+div.tabbed ul li.ui-state-active a {
+  background-color: #FFFFFF;
+  color: #999999;
+  cursor: default;
+  text-decoration: none;
+}
+
+blockquote.callout {
+	background-color:#fcf0df;
+	border-bottom:4px solid #f6d4a3;
+	border-top:4px solid #f6d4a3;
+	background-image:url(../res/images/block-quotes.gif);
+	background-repeat:no-repeat;
+}
