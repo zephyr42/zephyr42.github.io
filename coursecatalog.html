@@ -38,7 +38,10 @@
 .description { text-indent:2em; padding-top:0.5em;}
 .prereq { color:red; font-size:.8em; }
 .courseTitle { font-size:1.25em; }
-li { margin-bottom:1em; }
+#showAll { padding:.5em; margin-left:-.5em;}
+#search { width: 200px; }
+#select { padding-top:.5em; }
+
 </style>
 
     <!-- Page Specific CSS (if any) Goes here -->	
@@ -182,9 +185,8 @@ li { margin-bottom:1em; }
 	<h1>Course Catalog</h1>
 <div id="searcharea">
 	<label for="search">Live Search:</label>
-	<input type="search" name="search" id="search" placeholder="search"/>
-	<p>Enter a course number or title.</p>
-	<p>Select a specialization from the dropdown menu.</p>
+	<input type="search" name="search" id="search" placeholder="Enter a course number or title."/>
+	<p id="select">Select a specialization from the dropdown menu.</p>
 	<form name="myForm">
 	<select name="concentrations" id="optionList" onchange="window.getConcentrations(this.form)">
 		<option value="">Select an option</option>
