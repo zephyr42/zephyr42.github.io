@@ -68,7 +68,7 @@
 	
 	
 
-<script src="js/jquery.tools.min.js"></script></head>
+<script src="js/jquery.tools.min.js" type="html/css"></script></head>
 
 
 <body class="drill school">
@@ -117,21 +117,7 @@
             <div id="school-branding">
             	<h1><a href="http://lis.cua.edu" style="color:#FFF; text-decoration:none;">Department of Library and Information Science</a></h1>
                 
-                
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+             
 
 
 
@@ -176,8 +162,8 @@
 							<li><a href="">Employment</a></li>
 						</ul>
 					</li>
-					<li><a href="http://lis.cua.edu/about/contactus.cfm">Request Info/Contact Us</a> 
-			
+					<li><a href="http://lis.cua.edu/about/contactus.cfm">Request Info/Contact Us</a> </li>
+					</li>
 			</ul>
 		</div>
 			<div id="content">
@@ -185,7 +171,8 @@
 <div id="searcharea">
 	<label for="search">Live Search:</label>
 	<input type="search" name="search" id="search" placeholder="Enter a course number or title."/>
-	<p id="select">Browse specializations.</p>
+	<br/><br/>
+	<p id="select">Browse specializations:</p>
 	<form name="myForm">
 	<select name="concentrations" id="optionList" onchange="window.getConcentrations(this.form)">
 		<option value="">Select an option</option>
@@ -201,9 +188,9 @@
 	</select>
 	</form>
 </div>
-<div id="showAll">
-<!--<p><a href="#">Show all classes</a></p>-->
-</div>
+<!--<div id="showAll">
+<p><a href="#">Show all classes</a></p>
+</div>-->
 <div id="update">
 </div>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
@@ -224,7 +211,7 @@
 						output += '<br/>';
 						output += '<h1 class="courseNumber">'+ val.courseNumber + '</h1>';
 						output += '<h2 class="courseTitle">'+ val.courseTitle + '</h2>';
-						output += '<h3 class="credits">'+ val.credits + '</h4>';
+						output += '<h3 class="credits">'+ val.credits + '</h3>';
 						output += '<ul>'
 						output += '<li class="specialization">'+ val.specialization + '</li>';
 						output += '<li class="specialization">'+ val.specializationone + '</li>';
@@ -261,7 +248,7 @@
 						output += '<br/>';
 						output += '<h1 class="courseNumber">'+ val.courseNumber + '</h1>';
 						output += '<h2 class="courseTitle">'+ val.courseTitle + '</h2>';
-						output += '<h3 class="credits">'+ val.credits + '</h4>';
+						output += '<h3 class="credits">'+ val.credits + '</h3>';
 						output += '<ul>'
 						output += '<li class="specialization">'+ val.specialization + '</li>';
 						output += '<li class="specialization">'+ val.specializationone + '</li>';
@@ -278,7 +265,7 @@
 					output += '</div>';
 					$('#update').html(output);
 	});
-}
+};
 </script>
 <!--Show All Classes-->
 <script>
@@ -291,7 +278,7 @@
 						output += '<br/>';
 						output += '<h1 class="courseNumber">'+ val.courseNumber + '</h1>';
 						output += '<h2 class="courseTitle">'+ val.courseTitle + '</h2>';
-						output += '<h3 class="credits">'+ val.credits + '</h4>';
+						output += '<h3 class="credits">'+ val.credits + '</h3>';
 						output += '<ul>'
 						output += '<li class="specialization">'+ val.specialization + '</li>';
 						output += '<li class="specialization">'+ val.specializationone + '</li>';
@@ -307,8 +294,8 @@
 		});
 	});
 });
-</script>
-			</div>
+});
+</script></div>
 	
 	            </div><!--/pageBody -->
 
