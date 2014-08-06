@@ -173,7 +173,7 @@
 	<br/><br/>
 	<form name="myForm">
 	<select name="concentrations" id="optionList" onchange="window.getConcentrations(this.form)">
-		<option value="">Browse Specializations</option>
+		<option value="browse">Browse Specializations</option>
 		<option value="Cultural Heritage Information Management">Cultural Heritage Information Management</option>
 		<option value="Digital Libraries">Digital Libraries</option>
 		<option value="Generalist">Generalist</option>
@@ -238,7 +238,7 @@
 				$.getJSON('classes.json', function(data) {
 					var output = '<div class="program">';
 					$.each(data, function(key, val) {
-						if((val.specialization.search(selName) !== -1) ||
+						if ((val.specialization.search(selName) !== -1) ||
 						(val.specializationone.search(selName) !== -1) ||
 						(val.specializationtwo.search(selName) !== -1) ||
 						(val.specializationthree.search(selName) !== -1) ||
