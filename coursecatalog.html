@@ -39,7 +39,6 @@
 .prereq { color:red; font-size:.8em; }
 #showAll { padding:.5em; margin-left:-.5em;}
 #search { width: 200px; }
-#select { padding-top:.5em;}
 
 </style>
 
@@ -172,10 +171,9 @@
 	<label for="search">Live Search:</label>
 	<input type="search" name="search" id="search" placeholder="Enter a course number or title."/>
 	<br/><br/>
-	<p id="select">Browse specializations:</p>
 	<form name="myForm">
 	<select name="concentrations" id="optionList" onchange="window.getConcentrations(this.form)">
-		<option value="">Select an option</option>
+		<option value="">Browse Specializations</option>
 		<option value="Cultural Heritage Information Management">Cultural Heritage Information Management</option>
 		<option value="Digital Libraries">Digital Libraries</option>
 		<option value="Generalist">Generalist</option>
