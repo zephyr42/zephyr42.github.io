@@ -187,9 +187,6 @@
 	</select>
 	</form>
 </div>
-<!--<div id="showAll">
-<p><a href="#">Show all classes</a></p>
-</div>-->
 <div id="update">
 </div>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
@@ -223,12 +220,15 @@
 						output += '<br/>';
 						output += '</div>';
 						}
+						else if (!$('#search').val() == '') {
+							// textarea is empty
+							}
 					});
 					output += '</div>';
 					$('#update').html(output);
-		});//get JSON
-	});//search
-};//load
+				});//get JSON
+		});//search
+	};//load
 </script>
 <!--Dropdown Menu Options-->
 <script>
@@ -263,7 +263,7 @@
 					});
 					output += '</div>';
 					$('#update').html(output);
-	});
+	});	
 };
 </script>
 </div><!--update-->
