@@ -200,7 +200,10 @@
 				$.getJSON('classes.json', function(data) {
 					var output = '<div class="program">';
 					$.each(data, function(key, val) {
-						if (((val.courseNumber.search(myExp) !== -1) ||
+						if (!$('#search').val()) {
+							// textarea is empty
+						}
+						else if (((val.courseNumber.search(myExp) !== -1) ||
 						(val.courseTitle.search(myExp) !== -1) ||
 						(val.specialization.search(myExp) !== -1))) {
 						output += '<div class="courses">';
@@ -220,9 +223,6 @@
 						output += '<br/>';
 						output += '</div>';
 						}
-						else if (!$('#search').val() == '') {
-							// textarea is empty
-							}
 					});
 					output += '</div>';
 					$('#update').html(output);
