@@ -265,30 +265,96 @@
 	.remove-bottom { margin-bottom: 0 !important; }
 	.half-bottom { margin-bottom: 10px !important; }
 	.add-bottom { margin-bottom: 20px !important; }
+	
+/* #Local Navigation
+================================================== */
+#localnav a {
+	text-decoration:underline;
+	color:#328134;
+	font-size:0.85em;
+}
+	
 
-/* #Menu
+/* #Global Navigation
 ================================================== */
 #nav {
 	padding-left:10em;
 	margin-left:-10em;
 	padding-right:10em;
 	width:100%; 
-	background: #ccc; 
+	background: #ccc;
 }
-#nav ul li {
+#nav ul, ul.topmenu li {
 	margin: 0;
 	padding: 0; 
 	list-style: none;
 	float:left;
 }
+
 #nav li a {
-	display: block;
+	display: inline-block;
+	width:7.5em;
 	line-height: 2em;
 	padding: 0 1em;
+	text-align:center;
 }
 #nav li a:hover {
 	text-decoration:none;
-	background-color:#dcdcdc
+}
+.current {
+	background-color:#f3dce8;
+	height:2em;
+}
+
+/* Top&Submenus
+================================================== */
+.topmenu {
+	height:auto;
+}
+
+.topmenu li:hover {
+	background-color:#d3e1ef;
+}
+
+ul.topmenu li:hover ul {
+	left: 10.6em;
+}
+
+.topmenu, .submenu {
+	position:relative;
+}
+
+ul.submenu {
+	float:none;
+	height:auto;
+	position:absolute;
+	top:2.3em;
+	left:-9000em;
+	background-color:#ccc;
+}
+
+ul.submenu li {
+	float:none;
+	margin-top:.2em;
+	width:10.6em;
+	height: auto;
+	text-align:center;
+	border-bottom:1px solid white;
+}
+
+ul.submenu li a {
+	white-space: nowrap;
+}
+ul.submenu li a:hover {
+	height:2em;
+	top: 0;
+}
+ul.submenu li:last-child {
+	border-bottom:none;
+	height:2em;
+}
+ul.submenu li:first-child {
+	padding-top:.3em;
 }
 
 /* #Clear Floats
@@ -296,8 +362,10 @@
 .cf:before, .cf:after { content:""; display:table;}
 .cf:after { clear:both; }
 
+
 /*for IE 6/7 (trigger hasLayout)*/
 .cf {zoom:1;}
+
 
 /* #Table
 ================================================== */
