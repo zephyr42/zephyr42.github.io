@@ -4032,7 +4032,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   position: relative;
   display: block;
   padding: 10px 20px;
-  margin: 0px;
+  margin: 5px;
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
@@ -4074,6 +4074,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-right: 2px;
   line-height: 1.42857143;
   border: 1px solid transparent;
+  margin-top: 0;
 }
 /*.nav-tabs > li > a:hover {
   border-color: #eee #eee #ddd;
