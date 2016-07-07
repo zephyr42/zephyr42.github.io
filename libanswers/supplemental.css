@@ -181,7 +181,9 @@ button.list-group-item:focus {
 }
 .s-la-box-type-6 { border-width: 1px; border-style: solid; border-radius: 0px; padding: 15px; }
 .s-la-searchform-button {
+	font-family: "Archivo Narrow", sans-serif;
 	padding: 7px 15px 7px 15px;
+	font-weight:700;
 	color: #fff ;
 	font-weight: bold;
 	background-color: #0c6e40;
@@ -193,6 +195,7 @@ button.list-group-item:focus {
 	background-color: #ffca27;
 	background-image:none;
 }
+.s-la-faq-listing-q { font-weight: normal; font-size: 16px; }
 .s-la-content-iconitem-text a { color:#505050; font-weight:bold; }
 .s-la-content-iconitem-text a:hover { color:#0078a0; }
 #s-la-contact-slideout header a { border-radius: 0; }

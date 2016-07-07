@@ -7163,6 +7163,7 @@ li.s-la-faq-listing { margin-bottom: 10px; padding-bottom: 10px; border-bottom: 
 .s-la-content-search { text-align: center; }
 .s-la-content-search .tt-dropdown-menu  { text-align: left; margin-top: 36px; }
 .s-la-searchform-button {
+	font-family: "Archivo Narrow", sans-serif;
 	padding: 7px 15px 7px 15px;
 	color: #fff ;
 	background-color: #0c6e40 ;
