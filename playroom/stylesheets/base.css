@@ -297,6 +297,7 @@
 	line-height: 2em;
 	padding: 0 1em;
 	text-align:center;
+	text-decoration: none;
 }
 #nav li a:hover {
 	text-decoration:none;

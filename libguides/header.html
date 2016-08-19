@@ -1,0 +1,54 @@
+<style>
+/* menu styling begins here */
+
+header { height: 38px; background: #252525; background-size: cover; margin-bottom: 50px; position: relative; }
+header a.logo { position: absolute; display: block; width: 154px; height: 57px; background: url(logo.png) no-repeat 0 0; background-size: contain; z-index: 1; top: 15px; left: 20px; }
+header a.logo span { display: none; }
+
+nav ul { list-style: none; margin: 0; padding: 0; }
+
+nav ul::after { content:''; display: block; clear: both; }
+nav ul li:hover > ul { display: block; }
+
+nav ul li a { display: inline-block; color: #fff; background-color: #252525; padding: 10px 20px; text-decoration: none; width: 125px; font-family: Arial, sans-serif; }
+nav ul li a:hover { color: #ffca27; }
+
+nav ul ul { display: none; position: absolute; top: 100%; border-left: 1px solid black; border-right: 1px solid black; border-bottom: 1px solid black;}
+
+nav ul ul a { background-color: #fff; color: #000; }
+nav ul ul a:hover { color: #017bd7; }
+
+/* top level */
+nav > ul { padding-left: 35px; }
+nav > ul > li { float: left; }
+nav > ul > li > a { padding: 10px; 20px; 15px; 20px; }
+
+/*menu styling ends here*/
+	
+</style>
+
+<header>
+<nav>
+	<ul>
+		<li><a href="http://www.nvcc.edu/library">Libraries Home</a></li>
+		<li><a href="http://libguides.nvcc.edu/">Research Guides</a></li>
+		<li><a href="#">Citing Sources</a>
+			<ul class="dropdown-menu">
+				<li><a href="http://libguides.nvcc.edu/APACitationStyle">APA</a></li>
+				<li><a href="http://libguides.nvcc.edu/MLACitationStyle">MLA</a></li>
+				<li><a href="http://libguides.nvcc.edu/ChicagoTurabian">Chicago/Turabian</a></li>
+				<li><a href="http://libguides.nvcc.edu/citingmedia">Citing Media</a></li>
+				<li><a href="http://libguides.nvcc.edu/plagiarism">Plagiarism</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Get Help</a>
+			<ul>
+				<li><a href="http://libguides.nvcc.edu/sb.php?subject_id=72961">How to...</a></li>
+				<li><a href="https://www.nvcc.edu/library/chat.html">24/7 Chat</a></li>
+				<li><a href="http://libanswers.nvcc.edu/">Common Questions</a></li>
+				<li><a href="http://www.nvcc.edu/library/campus.html">Hours, Location, Staff</a></li>
+			</ul>
+		</li>
+	</ul>
+</nav>
+</header>

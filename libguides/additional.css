@@ -1,3 +1,5 @@
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic,900italic%7CArchivo+Narrow:400,400italic,700,700italic%7COswald:400,300,700" rel="stylesheet" type="text/css">
+<style>
 /* modifications */
 * {
 	border-radius: 0px;
@@ -5,6 +7,9 @@
 	border-bottom-right-radius: 0px;
 	border-top-left-radius: 0px;
 	border-top-right-radius: 0px;
+	-webkit-box-shadow:none!important;
+	box-shadow:none!important;
+	font-family: Lato, Helvetica, sans-serif;
 }
 #s-lg-az-nav,
 #s-lg-er-nav,
@@ -30,10 +35,17 @@ s-lg-srch-nav {
 .nav-pills > li.active > a:hover {
 	background-color: #252525;
 }
+.s-lg-index-nav-btn{
+	text-align:center;
+	/* fix the width of the nav buttons?*/
+}
 .nav-pills>li>a {
 	background-color: #e5e5e5;
 	color: #252525;
 	border-radius: 0px;
+}
+.nav-pills>li+li {
+	margin-left: 0px;
 }
 .nav>li>a:hover,
 .nav>li>a:focus {
@@ -70,7 +82,7 @@ s-lg-srch-nav {
 }
 .btn-info {
 	background-color: #0c6e40;
-	color: #fff;
+	color: #000;
 	border-color: #fff;
 	border-radius: 0px;
 	padding: 12px;
@@ -140,3 +152,24 @@ h1, h2, h3, h4, h5, h6 {
 	color: #000;
 	border-color: #fff;
 }
+.btn {
+	border-radius: 0;
+	background-color: #e5e5e5;
+	border-color: transparent;
+}
+.btn:hover {
+	border-color: transparent;
+}
+.btn-default {
+	border-radius: 0;
+	background-color: #e5e5e5;
+	border-color: transparent;
+	text-color: #000;
+}
+.btn-default:hover {
+	border-color: transparent;
+}
+.popover {
+	border-radius: 0;
+}
+</style>
