@@ -122,8 +122,8 @@ a:hover {
 	border-top-color: #fff;
 }
 .s-lib-box {
-	background-color: #f2f2f2;
-	border: none;
+	background-color: #fff;
+	border: 1px solid black;
 	border-radius: 0px;
 	margin-bottom: 3px;
 }
@@ -171,5 +171,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 .popover {
 	border-radius: 0;
+}
+.s-lib-box {
+	box-shadow: 0px transparent!important;
+	border-color: #000!important;
+	
+}
+.s-lib-box .s-lib-box-title {
+	border-bottom: 1px solid transparent;
+}
+.s-lib-box-std .s-lib-box-title {
+	border-bottom: 1px solid transparent!important;
 }
 </style>
