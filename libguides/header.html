@@ -1,9 +1,10 @@
 <head>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 	<style>
 /* menu styling begins here */
 
 nav { background-color: transparent; position: relative; padding: 45px 0px 0px 180px; }
-header { height: 50px; background: #252525 url("novabanner.png") no-repeat left top; background-size: cover; margin-bottom: 50px; position: relative; }
+header { height: 50px; background: #252525 url("novabanner.png") no-repeat left top; background-size: contain; margin-bottom: 50px; position: relative; }
 header a.logo { position: absolute; display: block; width: 154px; height: 57px; background: url(logo.png) no-repeat 0 0; background-size: contain; z-index: 1; top: 15px; left: 20px; }
 header a.logo span { display: none; }
 
@@ -32,19 +33,19 @@ nav > ul > li > a { padding: 10px; 20px; 15px; 20px; }
 @media screen and (max-width: 750px) {
 	
 	header a.logo { width: 120px; height: 20px; }
-	article { width: 100%; float: none; margin-bottom: 40px; }
-	article div { margin: 0px 40px; padding: 0px 0px 30px 0px; border-right: none; border-bottom: 1px solid #555; }
 	aside { width: 100%; float: none; }
-
-}
 	
+	nav { padding: 70px 0px 0px 10px; }
+	nav > ul { padding-left: 0px; padding-right: 20px; }
+	nav > ul > li > a { padding: 8px 10px 10px 10px}
+}
 </style>
 <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic,900italic%7CArchivo+Narrow:400,400italic,700,700italic%7COswald:400,300,700" rel="stylesheet" type="text/css">
 </head>
 <body>
 <header>
 <nav>
-	<ul>
+	<ul id="accordion">
 		<li><a href="http://www.nvcc.edu/library">Libraries Home</a></li>
 		<li><a href="http://libguides.nvcc.edu/">Research Guides</a></li>
 		<li><a href="#">Citing Sources<b class="caret"></b></a>
@@ -67,4 +68,16 @@ nav > ul > li > a { padding: 10px; 20px; 15px; 20px; }
 	</ul>
 </nav>
 </header>
+<script>
+$("#accordion > li").click(function(){
+
+	if(false == $(this).next().is(':visible')) {
+		$('#accordion > ul').slideUp(300);
+	}
+	$(this).next().slideToggle(300);
+});
+
+$('#accordion > ul:eq(0)').show();
+
+</script>
 </body>
