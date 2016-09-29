@@ -94,14 +94,33 @@
 		}
 		
 		@media (min-width:900px) and (max-width:1200px) {
-			.navbar-nav {	margin-left: 22%;}
-			.navbar-nav>li {	padding: 4px;	font-size: 100%;}
+			.navbar-nav { margin-left: 22%;}
+			.navbar-nav>li { padding: 2px;	font-size: 100%;}
+			div #logo a img { width: 50%; }
+			.navbar-inverse .navbar-nav .open .dropdown-menu > li > a { background-color: #fff; color: #000; }
+			.navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover { background-color: #fff; color: #016bd7; }
 		}
+		@media (max-width: 767px)
+			.navbar-nav { margin-left: 25%;}
+			.navbar-nav>li { padding: 2px; font-size: 100%;}
+			div #logo a img { width: 50%; }
+			.navbar-inverse .navbar-nav .open .dropdown-menu > li > a { background-color: #fff; color: #000; }
+			.navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover { background-color: #fff; color: #016bd7; }
+
 		@media (min-width:600px) and (max-width:899px) {
 			.navbar-nav { margin-left: 25%;}
 			.navbar-nav>li { padding: 2px; font-size: 100%;}
-			div#logo a img { width: 50%; }
-			}
+			div #logo a img { width: 50%; }
+			.navbar-inverse .navbar-nav .open .dropdown-menu > li > a { background-color: #fff; color: #000; }
+			.navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover { background-color: #fff; color: #016bd7; }
+		}
+		@media (min-width:400) and (max-width:499) {
+			.navbar-nav { margin-left: 25%;}
+			.navbar-nav>li { padding: 2px; font-size: 100%;}
+			div #logo a img { width: 50%; }
+			.navbar-inverse .navbar-nav .open .dropdown-menu > li > a { background-color: #fff; color: #000; }
+			.navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover { background-color: #fff; color: #016bd7; }
+		}
 			</style>
 			<style>
 				#s-lg-widget-1439477182930 a { font-weight: bold; }
