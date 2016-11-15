@@ -1,0 +1,81 @@
+/* CSSTerm.com Simple Horizontal DropDown CSS menu */
+02.
+ 
+03.
+.drop_menu {
+04.
+background:#005555;
+05.
+padding:0;
+06.
+margin:0;
+07.
+list-style-type:none;
+08.
+height:30px;
+09.
+}
+10.
+.drop_menu li { float:left; }
+11.
+.drop_menu li a {
+12.
+padding:9px 20px;
+13.
+display:block;
+14.
+color:#fff;
+15.
+text-decoration:none;
+16.
+font:12px arial, verdana, sans-serif;
+17.
+}
+18.
+ 
+19.
+/* Submenu */
+20.
+.drop_menu ul {
+21.
+position:absolute;
+22.
+left:-9999px;
+23.
+top:-9999px;
+24.
+list-style-type:none;
+25.
+}
+26.
+.drop_menu li:hover { position:relative; background:#5FD367; }
+27.
+.drop_menu li:hover ul {
+28.
+left:0px;
+29.
+top:30px;
+30.
+background:#5FD367;
+31.
+padding:0px;
+32.
+}
+33.
+ 
+34.
+.drop_menu li:hover ul li a {
+35.
+padding:5px;
+36.
+display:block;
+37.
+width:168px;
+38.
+text-indent:15px;
+39.
+background-color:#5FD367;
+40.
+}
+41.
+.drop_menu li:hover ul li a:hover { background:#005555; }

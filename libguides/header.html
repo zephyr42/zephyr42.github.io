@@ -32,12 +32,26 @@ nav > ul > li > a { padding: 10px; 20px; 15px; 20px; }
 	
 @media screen and (max-width: 750px) {
 	
+	header { height: 112px; }
 	header a.logo { width: 120px; height: 20px; }
 	aside { width: 100%; float: none; }
 	
 	nav { padding: 70px 0px 0px 10px; }
 	nav > ul { padding-left: 0px; padding-right: 20px; }
 	nav > ul > li > a { padding: 8px 10px 10px 10px}
+}
+@media screen and (max-width: 600px) {
+	
+	header { height: 100%; }
+	header a.logo { width: 120px; height: 20px; }
+	aside { width: 100%; float: none; }
+	
+	nav { padding: 70px 0px 0px 10px; }
+	nav > ul { padding-left: 0px; padding-right: 20px; }
+	nav > ul > li > a { padding: 8px 10px 10px 10px}
+	html, body {
+    font-family: Arial, Helvetica, sans-serif;
+}
 }
 </style>
 <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic,900italic%7CArchivo+Narrow:400,400italic,700,700italic%7COswald:400,300,700" rel="stylesheet" type="text/css">
@@ -50,19 +64,19 @@ nav > ul > li > a { padding: 10px; 20px; 15px; 20px; }
 		<li><a href="http://libguides.nvcc.edu/">Research Guides</a></li>
 		<li><a href="#">Citing Sources<b class="caret"></b></a>
 			<ul class="dropdown-menu">
-				<li><a href="http://libguides.nvcc.edu/APACitationStyle">APA</a></li>
-				<li><a href="http://libguides.nvcc.edu/MLACitationStyle">MLA</a></li>
-				<li><a href="http://libguides.nvcc.edu/ChicagoTurabian">Chicago/Turabian</a></li>
-				<li><a href="http://libguides.nvcc.edu/citingmedia">Citing Media</a></li>
-				<li><a href="http://libguides.nvcc.edu/plagiarism">Plagiarism</a></li>
+				<li class="submenu"><a href="http://libguides.nvcc.edu/APACitationStyle">APA</a></li>
+				<li class="submenu"><a href="http://libguides.nvcc.edu/MLACitationStyle">MLA</a></li>
+				<li class="submenu"><a href="http://libguides.nvcc.edu/ChicagoTurabian">Chicago/Turabian</a></li>
+				<li class="submenu"><a href="http://libguides.nvcc.edu/citingmedia">Citing Media</a></li>
+				<li class="submenu"><a href="http://libguides.nvcc.edu/plagiarism">Plagiarism</a></li>
 			</ul>
 		</li>
 		<li><a href="#">Get Help<b class="caret"></b></a>
 			<ul>
-				<li><a href="http://libguides.nvcc.edu/sb.php?subject_id=72961">How to...</a></li>
-				<li><a href="https://www.nvcc.edu/library/chat.html">24/7 Chat</a></li>
-				<li><a href="http://libanswers.nvcc.edu/">Common Questions</a></li>
-				<li><a href="http://www.nvcc.edu/library/campus.html">Hours, Location, Staff</a></li>
+				<li class="submenu"><a href="http://libguides.nvcc.edu/sb.php?subject_id=72961">How to...</a></li>
+				<li class="submenu"><a href="https://www.nvcc.edu/library/chat.html">24/7 Chat</a></li>
+				<li class="submenu"><a href="http://libanswers.nvcc.edu/">Common Questions</a></li>
+				<li class="submenu"><a href="http://www.nvcc.edu/library/campus.html">Hours, Location, Staff</a></li>
 			</ul>
 		</li>
 	</ul>
