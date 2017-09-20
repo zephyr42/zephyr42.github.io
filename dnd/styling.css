@@ -15,6 +15,7 @@ h1 {
 .pers-inner p {
 	margin: -10px 15px 15px 15px;
 	font-family: sans-serif;
+	border-bottom: 1px solid black;
 }
 .pers-inner>ul {
 	margin: -10px 15px 15px 0px;
@@ -58,4 +59,24 @@ li {
 }
 .proficient {
 	list-style-type: circle;
+}
+.passive-wis-number {
+	line-height: 40px;
+	width: 40px;
+	height: 40px;
+	background: white;
+	border: 1px solid black;
+	-moz-border-radius: 40px;
+	-webkit-border-radius: 40px;
+	border-radius: 40px;
+	font-family: "copperplate", sans-serif;
+	text-align: center;
+	font-size: 1em;
+	float: left;
+	margin-right: 10px;
+}
+.passive-wis>p:last-child {
+	line-height: 40px;
+	font-family: "copperplate", sans-serif;
+	font-size: 1em;
 }

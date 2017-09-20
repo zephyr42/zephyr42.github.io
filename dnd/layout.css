@@ -71,21 +71,48 @@
 .lang {
 	grid-column: 1/3;
 	grid-row: 3/4;
+	display: grid;
+	grid-template-rows: 1fr 1fr 3fr;
+	background: #c9cac8;
+}
+.passive-wis {
+	grid-column: 1;
+	grid-row: 1;
 	border: 1px solid black;
+	max-height: 70px;
+	padding-left: 10px;
+	background-color: white;
+}
+.lang>.box-header {
+	grid-column: 1;
+	grid-row: 2/3;
+	padding-top: 10px;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	background-color: white;
+}
+.languages {
+	grid-column: 1;
+	grid-row: 3/4;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	background-color: white;
 }
 .equipment {
-	grid-row: 3/4;
 	grid-column: 3/4;
+	grid-row: 3/4;
 	display: grid;
 	grid-template-columns: 1fr 3fr;
 	grid-template-rows: 1fr 4fr;
 	border: 1px solid black;
 }
 	.currency {
-		grid-row: 2;
 		grid-column: 1;
+		grid-row: 2;
 	}
 	.inventory {
-		grid-row: 2;
 		grid-column: auto;
+		grid-row: 2;
 	}
