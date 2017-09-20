@@ -40,7 +40,6 @@
 .exp-points {
 }
 .stats {
-	background-color: aqua;
 	display:grid;
 	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
