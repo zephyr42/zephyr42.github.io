@@ -33,6 +33,7 @@ li {
 	border-radius: 30px;
 	padding: 5px;
 	margin-bottom: 5px;
+	text-align: center;
 }
 .stat-number {
 	font-family: "copperplate", sans-serif;
@@ -61,9 +62,14 @@ li {
 }
 .skills>ul>li, .saving-throws>ul>li {
 	font-family: "copperplate", sans-serif;
-	font-size: 1.1em;
+	font-size: 1.2em;
 	font-variant: small-caps;
+	line-height: 1.2em;
 	list-style: circle;
+}
+.skills>ul>li>u {
+	font-family: sans-serif;
+	font-size: 1em;
 }
 .passive-wis-number {
 	line-height: 40px;
@@ -105,7 +111,13 @@ li {
 	float: left;
 	margin-right: 10px;
 }
-.profiency-bonus>p:last-child {
+.proficiency-bonus {
+	background: white;
+	border: 1px solid black;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.proficiency-bonus>p:last-child {
 	line-height: 40px;
 	font-family: "copperplate", sans-serif;
 	font-size: 1em;
@@ -124,4 +136,5 @@ li {
 	font-size: 1em;
 	float: left;
 	margin-right: 10px;
+	margin-left: 10px;
 }
