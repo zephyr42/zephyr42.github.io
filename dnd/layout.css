@@ -1,6 +1,6 @@
 .site {
 	display: grid;
-	grid-template-columns: .7fr 1fr 2fr 2fr;
+	grid-template-columns: .7fr 1.3fr 2fr 2fr;
 /*	grid-template-rows: 1fr 4fr 2fr; */
 }
 .box {
@@ -50,8 +50,46 @@
 	border: 1px solid black;
 	border-radius: 5px;
 }
+.saving-throws {
+	background: white;
+	border: 1px solid black;
+	margin: 1px;
+	padding: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	margin-bottom: 5px;
+}
 .prof {
-	background-color: fuchsia;
+	background: white;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+}
+.inspo {
+	border: 1px solid black;
+	max-height: 70px;
+	padding-left: 10px;
+	background-color: white;
+}
+.inspo {
+	grid-row: 1;
+}
+.profiency-bonus {
+	grid-row: 2;
+	border: 1px solid black;
+	max-height: 70px;
+	padding-left: 10px;
+	background-color: white;
+}
+.skills {
+	background: white;
+	border: 1px solid black;
+	margin: 1px;
+	padding: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
 }
 .enc {
 	background-color: purple;
